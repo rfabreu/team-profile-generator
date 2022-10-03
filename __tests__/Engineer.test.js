@@ -5,13 +5,13 @@ test('create an engineer object', () => {
         name: "Jane",
         id: 1234,
         email: "raabreugomes@gmail.com",
-        github: "rfabreu"
+        gitHub: "rfabreu"
     }
     const engineer = new Engineer(obj);
     expect(engineer.name).toEqual(expect.any(String));
-    expect(engineer.id).toEqual(engineer.any(Number));
-    expect(engineer.email).toEqual(engineer.any(String));
-    expect(engineer.github).toEqual(expect.any(String));
+    expect(engineer.id).toEqual(expect.any(Number));
+    expect(engineer.email).toEqual(expect.any(String));
+    expect(engineer.gitHub).toEqual(expect.any(String));
 });
 
 test("gets url path to engineer's github", () => {
@@ -19,7 +19,7 @@ test("gets url path to engineer's github", () => {
         name: "Jane",
         id: 1234,
         email: "raabreugomes@gmail.com",
-        github: "rfabreu"
+        gitHub: "rfabreu"
     }
     const engineer = new Engineer(obj);
     expect(engineer.getGitHub()).toEqual(expect.any(String));
@@ -30,7 +30,7 @@ test('retrieves engineer role', () => {
         name: "Jane",
         id: 1234,
         email: "raabreugomes@gmail.com",
-        github: "rfabreu"
+        gitHub: "rfabreu"
     }
     const engineer = new Engineer(obj);
     expect(engineer.getRole()).toEqual(expect.any(String));
