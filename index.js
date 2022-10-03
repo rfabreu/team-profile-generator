@@ -63,7 +63,7 @@ class RunApp {
                 {
                     type: 'input',
                     name: 'officeNumber',
-                    message: "What is the manager's office phone number?",
+                    message: "What is the manager's office number?",
                     validate: managerName => {
                         if (managerName) {
                             return true;
