@@ -249,6 +249,7 @@ class RunApp {
     }
     writeHTML(htmlTemplate) {
         writeFile(htmlTemplate)
+        console.log('Success! Go to you DIST folder to check the final page');
     }
 };
 
