@@ -245,7 +245,7 @@ class RunApp {
 
     createHTML(objManager, objEngineer, objIntern) {
         const generateHTML = new pageGenerator();
-        this.writeHTML(pagegenerator.getHtml(objManager, objEngineer, objIntern));
+        this.writeHTML(generateHTML.getHtml(objManager, objEngineer, objIntern));
     }
     writeHTML(htmlTemplate) {
         writeFile(htmlTemplate)
